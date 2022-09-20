@@ -10,7 +10,7 @@ public class Sqrt {
     public static int mySqrt(int x) {
         double newS = x;
         if (newS % 2 == 0) {
-            newS = Math.sqrt(x * x);
+            newS = Math.sqrt(x);  // исправила
             return (int) newS;
         }
         return 0;

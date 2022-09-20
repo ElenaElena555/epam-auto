@@ -4,10 +4,12 @@ public class Palindrome {
     public static void main(String[] args) {
 
         System.out.println(isPalindrome("12345321"));
+        //Вариант1
+        Integer x = 1221;
+        String s = String.valueOf(x);
+        System.out.println(s.substring(0).equals(s.substring(3)));
     }
-//        Integer x = 1221;
-//        String s = String.valueOf(x);
-//     Вариант1   System.out.println(s.substring(0,1).equals(s.substring(3,2))); - почему не работает?
+
 
 //    Вариант2    int count = 0;   - также не работает
 //       for (int i = 0; i < args.length; i++) {
@@ -23,16 +25,15 @@ public class Palindrome {
 //       }
 
 
-        //Вариант 3
-        public static boolean isPalindrome (String word){
-            int palin = word.length();
-            for (int i = 0; i < (palin/2); i++)
-            {
-                if (word.charAt(i) != word.charAt(palin- i - 1)) {
-                    return false;
-                }
+    //Вариант 3
+    public static boolean isPalindrome(String word) {
+        int palin = word.length();
+        for (int i = 0; i < (palin / 2); i++) {
+            if (word.charAt(i) != word.charAt(palin - i - 1)) {
+                return false;
             }
-            return true;
         }
+        return true;
     }
+}
 

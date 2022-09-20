@@ -2,11 +2,7 @@ package auto.epam;
 
 public class LengthOfLastWord {
     public static void main(String[] args) {
-//        Input: s = "Hello World"
-//       Output: 5
-//        Explanation: The last word is "World" with length 5.
 
-        System.out.println(lengthOfLastWord("Hello world"));
     }
 
 
