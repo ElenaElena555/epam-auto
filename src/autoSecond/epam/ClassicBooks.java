@@ -1,4 +1,4 @@
-package auto2.epam;
+package autoSecond.epam;
 
 public class ClassicBooks extends Books{
     public ClassicBooks(int amount, String name){

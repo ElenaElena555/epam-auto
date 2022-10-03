@@ -1,6 +1,6 @@
 package auto.epam;
 
-import auto2.epam.Books;
+import autoSecond.epam.Books;
 
 public class Static extends Books {
     public static void main(String[] args) {

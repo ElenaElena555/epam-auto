@@ -1,4 +1,4 @@
-package auto2.epam;
+package autoSecond.epam;
 
 public class Books {
     protected boolean o;

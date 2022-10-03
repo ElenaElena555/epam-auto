@@ -1,4 +1,4 @@
-package auto2.epam;
+package autoSecond.epam;
 
 public class Encapsulation extends Books {
     public static void main(String[] args) {

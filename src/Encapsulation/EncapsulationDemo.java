@@ -1,7 +1,7 @@
 package Encapsulation;
 
 
-import auto2.epam.ClassicBooks;
+import autoSecond.epam.ClassicBooks;
 
 public class EncapsulationDemo extends Encapsulation{
     public static void main(String[] args) {
