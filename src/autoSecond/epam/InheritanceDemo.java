@@ -5,7 +5,6 @@ public class InheritanceDemo {
         ClassicBooks classicBooks = new ClassicBooks(5, "War and Piece");
         ScientificBooks scientificBooks = new ScientificBooks(1, "Star wars");
 
-      //  System.out.println(String.format("s% | s%", classicBooks.amount, classicBooks.name));
 
     }
 }
