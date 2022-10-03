@@ -3,11 +3,11 @@ package auto.epam;
 public class Palindrome {
     public static void main(String[] args) {
 
-        System.out.println(isPalindrome("12345321"));
+        System.out.println(isPalindrome("12344321"));
         //Вариант1
-        Integer x = 1221;
-        String s = String.valueOf(x);
-        System.out.println(s.substring(0).equals(s.substring(3)));
+   //     Integer x = 1221;
+   //     String s = String.valueOf(x);
+   //     System.out.println(s.substring(0).equals(s.substring(3)));
     }
 
 
@@ -25,7 +25,7 @@ public class Palindrome {
 //       }
 
 
-    //Вариант 3
+    //Вариант 3(корректный)
     public static boolean isPalindrome(String word) {
         int palin = word.length();
         for (int i = 0; i < (palin / 2); i++) {

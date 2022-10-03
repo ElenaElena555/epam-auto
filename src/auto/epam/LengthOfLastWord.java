@@ -2,27 +2,24 @@ package auto.epam;
 
 public class LengthOfLastWord {
     public static void main(String[] args) {
+        System.out.println(lengthOfLastWord1("Hello world"));
 
     }
 
-
-    // Подскажите, пожалуйста, почему код не работает?
-    public static int lengthOfLastWord(String s) {
-        int length = s.length();
+    public static int lengthOfLastWord1(String s) {
         int count = 0;
-        int total = 0;
-        for (int i = length; i < length - 1; i--) {
-            if (s.charAt(i) == s.charAt(i))
-                count++;
-          else if (s.charAt(i) == ' ') {
-                total = count;
-                return total;
+        int start = s.length() - 1;
+        //   s = s.trim();
+        for (int i = start; i >= 0; i--) {
+            if (s.charAt(i) == ' ') {
+                break;
             }
+            count++;
         }
-
-        return 0;
+        return count;
     }
 }
+
 
 
 
