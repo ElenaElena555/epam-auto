@@ -21,7 +21,7 @@ public class Books {
 
         }
     }
-    //Почему не могу сделать этот метод static?
+
     public void changeName(String newName){
         this.name = newName;
         System.out.println(newName);

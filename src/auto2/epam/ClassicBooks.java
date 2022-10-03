@@ -8,7 +8,7 @@ public class ClassicBooks extends Books{
     public ClassicBooks(){
         System.out.println("ClassicBook () was caused");
     }
-    int o;
+
 
     public void author(){
         System.out.println("Classics");
