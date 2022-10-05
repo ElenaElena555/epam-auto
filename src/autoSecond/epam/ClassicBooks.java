@@ -1,8 +1,8 @@
 package autoSecond.epam;
 
 public class ClassicBooks extends Books{
-    public ClassicBooks(int amount, String name){
-        super(amount, name);
+    public ClassicBooks(int amount, String name, int age){
+        super(amount, name, age);
         System.out.println("ClassicBook (a,n) was caused");
     }
     public ClassicBooks(){
