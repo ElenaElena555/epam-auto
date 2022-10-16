@@ -18,8 +18,8 @@ public class Task3 {
         int N = Integer.parseInt(bufferedReader.readLine().trim());
         bufferedReader.close();
         for (int i = 1; i <= 10; i++) {
-         int res = N*i;
-            System.out.println(N+"x"+i+"="+ res);
+     //    int res = N*i;
+            System.out.println(N+"x"+i+"="+ N*i);
 
         }
     }
