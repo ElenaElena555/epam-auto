@@ -1,6 +1,8 @@
 package autoSecond.epam;
 
-public class Books {
+import java.io.Serializable;
+
+public class Books implements Serializable {
     protected boolean o;
     private int amount;
     private String name;
@@ -42,7 +44,7 @@ public class Books {
         System.out.println("Book()");
     }
 
-    Books(int weight, String name, int age) {
+    public Books(int weight, String name, int age) {
         System.out.println("Book(a,n)");
         this.amount = weight;
         this.name = name;
@@ -50,7 +52,7 @@ public class Books {
 
     }
 
-    Books(String name) {
+    public Books(String name) {
         System.out.println("Book(n)");
         this.name = name;
     }
