@@ -5,10 +5,12 @@ import autoSecond.epam.Books;
 import java.io.*;
 
 public class TryWithResourcesDemo {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws MySecondException {
         String address = "C:\\Users\\Elena_Sukhanova\\IdeaProjects\\EPAM-auto\\resources\\Draft.txt";
         Books book1 = new Books("War and Piece");
         Books book2 = new Books(3, "Harry Potter", 6);
+
 
         try { // Writing to file
             FileOutputStream to = new FileOutputStream(address);
@@ -19,9 +21,9 @@ public class TryWithResourcesDemo {
 
 
         }
-        //  catch (MySecondExceprion ex) {
-        //
-        //  }
+          catch (FileNotFoundException e) {
+            throw new MySecondException("ошибка");
+          }
         catch (IOException e) {
             e.printStackTrace();
         }
@@ -37,6 +39,8 @@ public class TryWithResourcesDemo {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+
 //Reading a file
         //    TryWithResourcesDemo demo = new TryWithResourcesDemo();
         //    demo.readBooks(address);
@@ -55,6 +59,7 @@ public class TryWithResourcesDemo {
             e.printStackTrace();
         }
     }
+
 
 }
 

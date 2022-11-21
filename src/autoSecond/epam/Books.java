@@ -93,5 +93,10 @@ public class Books implements Serializable {
     public void restorationIsNeeded() {
 
     }
+    @Override
+    public String toString() {
 
+        return  "name" + " "+ name + " "+
+                "amount" +" "+ amount +" "+ "age"+" "+ age;
+    }
 }

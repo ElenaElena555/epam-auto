@@ -1,10 +1,12 @@
 package autoSecond.epam.HW7;
 
-public class MySecondExceprion extends Exception{
-    public MySecondExceprion(){
+class MySecondException extends Exception {
+    public MySecondException(MySecondException e) {
 
     }
-    public MySecondExceprion(String message){
+
+    public MySecondException(String message) {
+        super(message);
         System.out.println("File Not found");
     }
 }
